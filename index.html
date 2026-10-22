@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Aplicación AppSheet</title>
+  <title>CRM Avilés y Asociados</title>
+
+  <!-- Ícono y nombre del atajo -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="CRM Avilés">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
+
   <style>
     body, html {
       margin: 0;
@@ -19,6 +28,13 @@
   </style>
 </head>
 <body>
-  <iframe src="https://www.appsheet.com/start/6a32045d-0b63-46e4-a05f-e97b804d42c7?platform=desktop#appName=CRMAVILESYASOCIADOS-94643661&vss=H4sIAAAAAAAAA6WOMQ7CMBAE_7K1X-AWKBCCBkSDU5j4IlkkdhTbQGT571wIiDqivDnN7mbcLT2OUdc3yEv-XTsaIZEVTmNPClJh5V0cfKsgFA66m-GaktFBoaBU4mtHCpB5iSz_aRawhly0jaVhSpo8TvhY_J4cBrOBItClqK8tvaeyUQqzxtcpkDnzjMX1Yes2z147s_eGAxvdBiovi63wdFsBAAA=&view=Deudas"></iframe>
+  <iframe
+    src="https://www.appsheet.com/start/6a32045d-0b63-46e4-a05f-e97b804d42c7?platform=desktop#appName=CRMAVILESYASOCIADOS-94643661&vss=H4sIAAAAAAAAA6WOMQ7CMBAE_7K1X-AWKBCCBkSDU5j4IlkkdhTbQGT571wIiDqivDnN7mbcLT2OUdc3yEv-XTsaIZEVTmNPClJh5V0cfKsgFA66m-GaktFBoaBU4mtHCpB5iSz_aRawhly0jaVhSpo8TvhY_J4cBrOBItClqK8tvaeyUQqzxtcpkDnzjMX1Yes2z147s_eGAxvdBiovi63wdFsBAAA=&view=Deudas"
+    allow="geolocation *; camera *; microphone *; fullscreen *; clipboard-write *">
+  </iframe>
+  <script>
+    // Si Safari muestra esta página desde "Atrás", la recarga para traer datos nuevos
+    window.addEventListener("pageshow", e => { if (e.persisted) location.reload(); });
+  </script>
 </body>
 </html>
